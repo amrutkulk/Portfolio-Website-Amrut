@@ -479,6 +479,7 @@ body {
     background-color: #3282b8;
 }
 .project {
+    cursor: pointer; /* Add pointer cursor to indicate it's clickable */
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 5px;
@@ -486,10 +487,13 @@ body {
     display: flex;
     align-items: center;
 }
+
 .project:hover {
     transform: translateY(-5px);
     background-color: #162447;
 }
+
+
 .project img {
     width: 100px;
     height: 70px;

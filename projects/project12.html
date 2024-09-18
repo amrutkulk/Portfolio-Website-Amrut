@@ -1,0 +1,123 @@
+<html></html>
+<head>
+    <title>VectorVision LLM Powered Document Explorer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1A1A2E;
+            color: #EAEAEA;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .date {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            margin-bottom: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            color: #EAEAEA;
+            background-color: #0F3460;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 1em;
+        }
+        .summary {
+            margin-top: 20px;
+        }
+        .summary h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .summary ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .summary ul li {
+            margin-bottom: 10px;
+        }
+        .footer-buttons {
+            margin-top: 20px;
+        }
+        .footer-buttons a {
+            text-decoration: none;
+            color: #EAEAEA;
+            background-color: #0F3460;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>VectorVision LLM Powered Document Explorer
+        </h1>
+        <div class="date">Jan 2024 - Feb 2024</div>
+        
+        <div class="summary">
+            <h2>Summary</h2>
+            <ul>
+                <li>Document Loading: Utilizes PyPDFDirectoryLoader to read and load PDF documents from a specified directory into the system.
+                    
+                    
+                   
+                    
+                  
+                    
+                   
+                    
+                    
+                   
+                </li>
+                <li> Text Chunking: Applies RecursiveCharacterTextSplitter to split the text into manageable chunks, optimizing it for processing and embedding.
+                    
+                </li>
+                <li>   Vector Embeddings: Creates text embeddings using OpenAI's pre-trained models, allowing for vector representation of text data.
+                    
+   
+                </li>
+                <li> Pinecone Initialization: Sets up Pinecone with an API key and environment, and creates a vector index for storing and querying document embeddings.
+                    
+
+                </li>
+                <li>  Vector Indexing: Indexes the chunked document embeddings into Pinecone for efficient vector-based similarity searches.
+                    
+                </li>
+                <li>   Similarity Search: Implements a function to perform similarity searches in Pinecone based on a query to retrieve relevant document chunks.
+                    
+                    </li>
+                    <li>Question Answering Chain: Configures a question-answering chain using OpenAI's model and LangChain to process queries and generate answers.
+                       </li>
+                       <li> Query and Answer Retrieval: Executes a query to search for relevant documents in Pinecone and uses the question-answering chain to produce answers based on those documents.</li>
+               
+                <br>
+                <li><p>Machine Learning, Data Preprocessing, Feature Engineering, Model Evaluation, Data Visualization,</p></li>
+            </ul>
+        </div>
+        <div class="footer-buttons">
+           
+            <a href="https://github.com/amrutkulk/VectorVision-LLM-Powered-Document-Explorer/blob/main/test.ipynb">Code</a>
+            
+        </div>
+    </div>
+</body>
+</html>

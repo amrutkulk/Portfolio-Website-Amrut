@@ -39,3 +39,13 @@ function filterProjects(category) {
 
     event.target.classList.add('active');
 }
+
+
+function redirectToProject(projectId) {
+    // You can redirect to any page, including one that summarizes the project    
+    window.location.href = `./projects/${projectId}.html`;
+}
+
+function redirectToPublication(publicationId) {
+    window.location.href = `./publication/${publicationId}.html`;
+}
